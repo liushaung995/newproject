@@ -1,0 +1,14 @@
+<script src="/js/lib/require.js"></script>
+<script src="/js/lib/require-config.js"></script>
+<script type="text/javascript">
+        (function(){
+            <% if(data.main){ %>
+                <% if(data.main instanceof Array){ data.main.forEach(function(item){%>
+                        require(["<%= item %>"]);
+                    <% })}else{ %>
+                        require(["<%= data.main %>"]);
+                <%} %>
+            <%} %>
+        })()
+</script>
+</html>

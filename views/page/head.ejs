@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link  rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <!--<meta http-equiv="Cache-Control" content="max-age=2592000" />-->
+    <title>皇冠站 - <%= data.title %></title>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="applicable-device" content="mobile">
+    <!--&lt;!&ndash; 新 Bootstrap 核心 CSS 文件 &ndash;&gt;-->
+    <!--<link rel="stylesheet" href="/js/lib/bootstrap/css/bootstrap.min.css">-->
+    <!--&lt;!&ndash; 可选的Bootstrap主题文件（一般不用引入） &ndash;&gt;-->
+    <!--<link rel="stylesheet" href="/js/lib/bootstrap/css/bootstrap-responsive.min.css">-->
+    <!--&lt;!&ndash; jQuery文件。务必在bootstrap.min.js 之前引入 &ndash;&gt;-->
+    <script src="/js/lib/jquery-1.11.1.min.js"></script>
+    <% if(data.css && data.css.length>0){data.css.forEach(function(item){ %>
+    <link rel="stylesheet" href="<%=item%>" type="text/css" />
+    <% })} %>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="/js/flexible.js"></script>
+</head>

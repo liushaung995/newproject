@@ -1,0 +1,22 @@
+<%- include('page/head.ejs', {data:{
+title:"登陆注册",
+css:[
+"/css/login.css"
+]
+}})%>
+<body>
+<div class="container">
+    <form class="form-signin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="text" class="input-block-level" placeholder="User Name">
+        <input type="password" class="input-block-level" placeholder="Password">
+        <div class="checktxt">
+            <i class="check_box check_boxs"></i><span> Remember me</span>
+            <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+            <button class="btn btn-large btn-primary" type="button">Register</button>
+        </div>
+    </form>
+</div>
+
+</body>
+<%- include('page/footer.ejs',{data:{main:"/modules/login/login.js"}}); %>
