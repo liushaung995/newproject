@@ -3,8 +3,9 @@
  */
 define(['zepto'],function($){
     $('button[type=button]').on('click',function(){
+        alert(1)
         $.ajax({
-            url:"http://localhost:3000/users/save2",
+            url:"/users/save2",
             data:{
                 username:$('input[type="text"]').val(),
                 password:$('input[type="password"]').val()
