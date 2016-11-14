@@ -3,7 +3,6 @@
  */
 define(['zepto'],function($){
     $('button[type=button]').on('click',function(){
-        alert(1)
         $.ajax({
             url:"/users/save2",
             data:{
