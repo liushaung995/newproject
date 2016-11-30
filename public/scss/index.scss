@@ -1,0 +1,48 @@
+@import 'inculde/config.scss';
+@import 'inculde/menus.scss';
+@import 'inculde/reset.scss';
+
+.o-header-nav{
+  position: absolute;
+  top:0;
+  height: .87rem;
+  width:100%;
+  background: #3184a1;
+  -webkit-transition: -webkit-transform .3s;
+  transition: transform .3s;
+  div{
+    border: none;
+    width: 1rem;
+    height: .87rem;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    outline: none;
+  }
+  .header-left{
+    background: #3184a1 url(../images/index/menu-button-bg.png) no-repeat center center;
+    background-size: 50%;
+    left:0;
+  }
+  .header-right{
+    background: #3184a1 url(../images/index/useravatar.png) no-repeat center center;
+    background-size: 50%;
+    right:0;
+  }
+  h2{
+    position: relative;
+    margin: 0 1rem;
+    height:100%;
+    text-align: center;
+    color:#fff;
+    font-size: .3rem;
+    white-space: nowrap;
+    line-height: .87rem;
+  }
+}
+.o-header-nav.is-active{
+  -webkit-transform: translateX($menu-width);
+  -ms-transform: translateX($menu-width);
+  transform: translateX($menu-width);
+}

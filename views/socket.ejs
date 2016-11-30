@@ -1,0 +1,20 @@
+<%- include('page/head.ejs', {data:{
+title:"首页",
+css:[
+"/css/reset.css","/css/app.css","/css/bootstrap.css"
+]
+}})%>
+<body>
+<div class="wrapper">
+    <div class="content" id="chat">
+        <ul id="chat_conatiner">
+        </ul>
+    </div>
+    <div class="action">
+        <textarea ></textarea>
+        <button class="btn btn-success" id="clear">清屏</button>
+        <button class="btn btn-success" id="send">发送</button>
+    </div>
+</div>
+</body>
+<%- include('page/footer.ejs',{data:{main:"/modules/socket.js"}}); %>

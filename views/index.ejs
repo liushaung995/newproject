@@ -1,12 +1,29 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link  rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include('page/head.ejs', {data:{
+title:"首页",
+css:[
+"/css/index.css"
+]
+}})%>
+<body>
+<nav class="o-header-nav">
+    <div class="header-left"></div>
+    <div class="header-right"
+         onclick="window.location.href='/users/login';"></div>
+    <h2>首页</h2>
+</nav>
+<div id="c-menu--slide-left" class="c-menu c-menu--slide-left">
+    <button class="c-menu__close">← Close Menu</button>
+    <ul class="c-menu__items">
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a>
+        </li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a>
+        </li>
+    </ul>
+</div>
+<div id="c-mask" class="c-mask"></div>
+
+</body>
+<%- include('page/footer.ejs',{data:{main:"/modules/index.js"}}); %>
