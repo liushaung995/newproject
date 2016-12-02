@@ -9,7 +9,8 @@ define(['zepto'],function($){
     //    port: 3000
     //});
     //ws.connect();
-    var ws = io.connect('http://localhost:3000');
+    var ws = io.connect('http://10.243.242.245:3000');
+
     //ws.on('news', function (data) {
     //    console.log(data);
     //    ws.emit('my other event', { my: 'data' });
