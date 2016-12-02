@@ -2,13 +2,18 @@
  * Created by liushuang on 2016/11/15.
  */
 
-define(['zepto','io'],function($,io){
-debugger
-    //var ws = io.connect('http://localhost:3000');
-    var ws= new io.Socket('127.0.0.1',{
-        port: 3000
-    });
-    ws.connect();
+define(['zepto'],function($){
+
+    //var ws = io.connect('http://localhost:3000/one');
+    //var ws= new io.Socket('127.0.0.1',{
+    //    port: 3000
+    //});
+    //ws.connect();
+    var ws = io.connect('http://localhost:3000');
+    //ws.on('news', function (data) {
+    //    console.log(data);
+    //    ws.emit('my other event', { my: 'data' });
+    //});
     var sendMsg = function(msg){
         ws.emit('send.message', msg);
     }
