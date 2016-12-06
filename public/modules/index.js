@@ -10,5 +10,4 @@ define(['zepto'],function($){
         e.stopPropagation();
         $('#c-menu--slide-left,#c-mask,nav').removeClass('is-active')
     })
-
 })
