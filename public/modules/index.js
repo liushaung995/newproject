@@ -7,7 +7,7 @@ define(['zepto'],function($){
         $('#c-menu--slide-left,#c-mask,nav').addClass('is-active')
     })
     $('#c-mask,.c-menu__close').on('click',function(e){
-        e.stopPropagation();
+        e.stopPropagation(1);
         $('#c-menu--slide-left,#c-mask,nav').removeClass('is-active')
     })
 
