@@ -5,12 +5,12 @@ css:[
 ]
 }})%>
 <body>
-<nav class="o-header-nav">
-    <div class="header-left"></div>
-    <div class="header-right"
-         onclick="window.location.href='/users/login';"></div>
-    <h2>首页</h2>
-</nav>
+<!--<nav class="o-header-nav" >-->
+    <!--<div class="header-left"></div>-->
+    <!--<div class="header-right"-->
+         <!--onclick="window.location.href='/users/login';"></div>-->
+    <!--<h2>首页</h2>-->
+<!--</nav>-->
 <div id="c-menu--slide-left" class="c-menu c-menu--slide-left">
     <button class="c-menu__close">← Close Menu</button>
     <ul class="c-menu__items">
@@ -24,5 +24,6 @@ css:[
     </ul>
 </div>
 <div id="c-mask" class="c-mask"></div>
+<canvas id="canvas" width="600" height="600" style="margin: auto"></canvas>
 </body>
 <%- include('page/footer.ejs',{data:{main:"/modules/index.js"}}); %>
